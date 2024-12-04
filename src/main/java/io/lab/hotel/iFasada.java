@@ -9,8 +9,9 @@ public interface iFasada {
 	/**
 	 * 
 	 * @param reservationID
+	 * @param status
 	 */
-	boolean changeStatus(int reservationID);
+	boolean changeStatus(int reservationID, String status);
 
 	/**
 	 * 
@@ -41,9 +42,10 @@ public interface iFasada {
 	float getBill(float reservationID);
 
 	/**
+	 * 
 	 * @param hotelID
 	 */
-	ArrayList<Employee> getEmployeesList(int hotelID);
+	Employee[] getEmployeesList(int hotelID);
 
 	/**
 	 * 
@@ -84,5 +86,17 @@ public interface iFasada {
 	 * @param hotelConfiguration
 	 */
 	boolean registerHotel(String name, String directorPESEL, String hotelConfiguration);
+
+	/**
+	 * 
+	 * @param PESEL
+	 */
+	User getUser(String PESEL);
+
+	/**
+	 * 
+	 * @param reservationID
+	 */
+	String getStatus(int reservationID);
 
 }

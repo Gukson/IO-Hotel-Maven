@@ -8,26 +8,94 @@ import java.util.ArrayList;
 
 public interface iPresenter {
 
-	boolean acceptHotel();
+	/**
+	 * 
+	 * @param hotelID
+	 */
+	boolean acceptHotel(int hotelID);
 
-	boolean changeStatus();
+	/**
+	 * 
+	 * @param reservationID
+	 */
+	boolean changeStatus(float reservationID);
 
-	boolean createReservation();
+	/**
+	 * 
+	 * @param clientPESEL
+	 * @param basicCost
+	 * @param bookingDetails
+	 * @param startDate
+	 * @param endDate
+	 */
+	boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate);
 
-	boolean deleteHotel();
+	/**
+	 * 
+	 * @param hotelID
+	 */
+	boolean deleteHotel(int hotelID);
 
-	boolean editHotel();
+	/**
+	 * 
+	 * @param hotelIDr
+	 */
+	boolean editHotel(int hotelIDr);
 
-	boolean generateBill();
+	/**
+	 * 
+	 * @param reservationID
+	 */
+	boolean generateBill(float reservationID);
 
-	ArrayList<Client> getClientList();
+	/**
+	 * 
+	 * @param hotelID
+	 */
+	ArrayList<Client> getClientList(int hotelID);
 
-	Reservation getReservationDetails();
+	/**
+	 * 
+	 * @param reservationID
+	 */
+	Reservation getReservationDetails(int reservationID);
 
-	User login();
+	/**
+	 * 
+	 * @param email
+	 * @param password
+	 */
+	User login(String email, String password);
 
-	boolean register();
+	/**
+	 * 
+	 * @param name
+	 * @param surname
+	 * @param PESEL
+	 * @param email
+	 * @param phoneNumber
+	 */
+	boolean register(String name, String surname, String PESEL, String email, String phoneNumber);
 
-	boolean registerHotel();
+	/**
+	 * 
+	 * @param name
+	 * @param directorPESEL
+	 * @param hotelConfiguration
+	 */
+	boolean registerHotel(String name, String directorPESEL, String hotelConfiguration);
+
+	/**
+	 * 
+	 * @param PESEL
+	 */
+	User getUser(String PESEL);
+
+	/**
+	 * 
+	 * @param configuration
+	 * @param hotel
+	 */
+	void setHotelConfigurationStrategy(String configuration, Hotel hotel);
 
 }
