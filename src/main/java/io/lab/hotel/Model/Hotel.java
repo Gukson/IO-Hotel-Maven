@@ -1,4 +1,4 @@
-package io.lab.hotel.Model;
+package Model;
 
 import java.util.ArrayList;
 
@@ -6,9 +6,10 @@ public class Hotel {
 
 	private String name;
 	private String directorPESEL;
-	private ArrayList<Employee> employeesList;
+	private Employee[] employeesList;
 	private String status = "pending";
 	private String hotelConfiguration;
+	private HotelConfigurationStrategy configurationStrategy;
 
 	public String getName() {
 		return this.name;
@@ -43,7 +44,6 @@ public class Hotel {
 		return this.employeesList;
 	}
 
-
 	public String getStatus() {
 		return this.status;
 	}
@@ -66,6 +66,14 @@ public class Hotel {
 	 */
 	public boolean setHotelConfiguration(String hotelConfiguration) {
 		return true;
+	}
+
+	/**
+	 * 
+	 * @param configurationStrategy
+	 */
+	public void setConfigurationStrategy(HotelConfigurationStrategy configurationStrategy) {
+		this.configurationStrategy = configurationStrategy;
 	}
 
 }
