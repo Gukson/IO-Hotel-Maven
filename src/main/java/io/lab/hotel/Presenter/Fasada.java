@@ -17,8 +17,9 @@ public class Fasada implements iFasada {
 	/**
 	 * 
 	 * @param reservationID
+	 * @param status
 	 */
-	public boolean changeStatus(int reservationID) {
+	public boolean changeStatus(int reservationID, String status) {
 		return true;
 	}
 
@@ -68,6 +69,7 @@ public class Fasada implements iFasada {
 	}
 
 	/**
+	 * 
 	 * @param hotelID
 	 */
 	public ArrayList<Employee> getEmployeesList(int hotelID) {
@@ -124,6 +126,24 @@ public class Fasada implements iFasada {
 	 */
 	public boolean registerHotel(String name, String directorPESEL, String hotelConfiguration) {
 		return true;
+	}
+
+	/**
+	 * 
+	 * @param PESEL
+	 */
+	public User getUser(String PESEL) {
+		// TODO - implement Fasada.getUser
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param reservationID
+	 */
+	public String getStatus(int reservationID) {
+		// TODO - implement Fasada.getStatus
+		throw new UnsupportedOperationException();
 	}
 
 }
