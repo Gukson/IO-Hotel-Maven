@@ -13,14 +13,9 @@ public class Client extends User {
 	private String role = "client";
 
 	public ArrayList<Reservation> getReservationList() {
-		// TODO - implement Client.getReservationList
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param reservationList
-	 */
 	public boolean setReservationList(int reservationList) {
 		return true;
 	}
@@ -29,10 +24,6 @@ public class Client extends User {
 		return this.name;
 	}
 
-	/**
-	 * 
-	 * @param Name
-	 */
 	public boolean setName(String Name) {
 		return true;
 	}
@@ -41,10 +32,6 @@ public class Client extends User {
 		return this.surname;
 	}
 
-	/**
-	 * 
-	 * @param Surname
-	 */
 	public boolean setSurname(String Surname) {
 		return true;
 	}
@@ -53,23 +40,14 @@ public class Client extends User {
 		return this.email;
 	}
 
-	/**
-	 * 
-	 * @param email
-	 */
 	public boolean setEmail(String email) {
 		return true;
 	}
 
 	public String getPESEL() {
-		// TODO - implement Client.getPESEL
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param PESEL
-	 */
 	public boolean setPESEL(String PESEL) {
 		return true;
 	}
@@ -78,10 +56,6 @@ public class Client extends User {
 		return this.phoneNumber;
 	}
 
-	/**
-	 * 
-	 * @param phoneNumber
-	 */
 	public boolean setPhoneNumber(String phoneNumber) {
 		return true;
 	}
@@ -90,16 +64,7 @@ public class Client extends User {
 		return this.role;
 	}
 
-	/**
-	 * 
-	 * @param name
-	 * @param surname
-	 * @param PESEL
-	 * @param email
-	 * @param phoneNumber
-	 */
 	public Client(String name, String surname, String PESEL, String email, String phoneNumber) {
-		// TODO - implement Client.Client
 		throw new UnsupportedOperationException();
 	}
 

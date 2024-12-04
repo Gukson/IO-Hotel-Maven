@@ -12,10 +12,6 @@ public class Employee extends User {
 		return this.name;
 	}
 
-	/**
-	 * 
-	 * @param Name
-	 */
 	public boolean setName(String Name) {
 		return true;
 	}
@@ -24,23 +20,14 @@ public class Employee extends User {
 		return this.surname;
 	}
 
-	/**
-	 * 
-	 * @param Surname
-	 */
 	public boolean setSurname(String Surname) {
 		return true;
 	}
 
 	public String getPESEL() {
-		// TODO - implement Employee.getPESEL
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param PESEL
-	 */
 	public boolean setPESEL(String PESEL) {
 		return true;
 	}
@@ -49,22 +36,11 @@ public class Employee extends User {
 		return this.role;
 	}
 
-	/**
-	 * 
-	 * @param role
-	 */
 	public boolean setRole(String role) {
 		return true;
 	}
 
-	/**
-	 * 
-	 * @param name
-	 * @param surname
-	 * @param PESEL
-	 */
 	public Employee(String name, String surname, String PESEL) {
-		// TODO - implement Employee.Employee
 		throw new UnsupportedOperationException();
 	}
 
@@ -72,10 +48,6 @@ public class Employee extends User {
 		return this.email;
 	}
 
-	/**
-	 * 
-	 * @param email
-	 */
 	public boolean setEmail(String email) {
 		return true;
 	}

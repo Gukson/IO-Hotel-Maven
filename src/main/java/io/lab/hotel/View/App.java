@@ -10,6 +10,4 @@ public class App {
 
 	public ArrayList<View> views;
 
-
-
 }

@@ -8,8 +8,7 @@ public class Main {
         App app = new App();
 
         View login = new View();
-        login.login();
-
+        login.login("siema", "elo");
 
 
     }

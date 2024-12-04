@@ -3,21 +3,13 @@ package io.lab.hotel;
 import io.lab.hotel.Model.Client;
 import io.lab.hotel.Model.User;
 import io.lab.hotel.Model.Reservation;
-
+import io.lab.hotel.Model.Hotel;
 import java.util.ArrayList;
 
 public interface iPresenter {
 
-	/**
-	 * 
-	 * @param hotelID
-	 */
 	boolean acceptHotel(int hotelID);
 
-	/**
-	 * 
-	 * @param reservationID
-	 */
 	boolean changeStatus(float reservationID);
 
 	/**

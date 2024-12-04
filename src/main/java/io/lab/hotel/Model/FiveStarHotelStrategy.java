@@ -4,12 +4,6 @@ import java.util.ArrayList;
 
 public class FiveStarHotelStrategy implements HotelConfigurationStrategy {
 
-	/**
-	 * 
-	 * @param hotel
-	 */
-	public void configureHotel(Hotel hotel) {
-
-	}
+	public void configureHotel(Hotel hotel) {}
 
 }

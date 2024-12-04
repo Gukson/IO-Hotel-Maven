@@ -15,10 +15,6 @@ public class Reservation {
 		return this.bookingDetails;
 	}
 
-	/**
-	 * 
-	 * @param bookingDetails
-	 */
 	public boolean setBookingDetails(String bookingDetails) {
 		return true;
 	}
@@ -27,10 +23,7 @@ public class Reservation {
 		return this.status;
 	}
 
-	/**
-	 * 
-	 * @param status
-	 */
+
 	public boolean setStatus(String status) {
 		return true;
 	}
@@ -39,10 +32,7 @@ public class Reservation {
 		return this.basicCost;
 	}
 
-	/**
-	 * 
-	 * @param basicCost
-	 */
+
 	public boolean setBasicCost(float basicCost) {
 		return true;
 	}
@@ -51,10 +41,7 @@ public class Reservation {
 		return this.addedCost;
 	}
 
-	/**
-	 * 
-	 * @param addedCost
-	 */
+
 	public boolean setAddedCost(float addedCost) {
 		return true;
 	}
@@ -63,10 +50,7 @@ public class Reservation {
 		return this.reservationID;
 	}
 
-	/**
-	 * 
-	 * @param reservationID
-	 */
+
 	public boolean setReservationID(int reservationID) {
 		return true;
 	}
@@ -75,10 +59,7 @@ public class Reservation {
 		return this.clientPESEL;
 	}
 
-	/**
-	 * 
-	 * @param clientID
-	 */
+
 	public boolean setClientPESEL(int clientID) {
 		return true;
 	}
@@ -87,10 +68,6 @@ public class Reservation {
 		return this.startDate;
 	}
 
-	/**
-	 * 
-	 * @param startDate
-	 */
 	public boolean setStartDate(String startDate) {
 		return true;
 	}
@@ -99,24 +76,11 @@ public class Reservation {
 		return this.endDate;
 	}
 
-	/**
-	 * 
-	 * @param endDate
-	 */
 	public boolean setEndDate(String endDate) {
 		return true;
 	}
 
-	/**
-	 * 
-	 * @param clientPESEL
-	 * @param basicCost
-	 * @param bookingDetails
-	 * @param startDate
-	 * @param endDate
-	 */
 	public Reservation(String clientPESEL, int basicCost, String bookingDetails, String startDate, String endDate) {
-		// TODO - implement Reservation.Reservation
 		throw new UnsupportedOperationException();
 	}
 

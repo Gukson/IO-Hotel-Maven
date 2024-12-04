@@ -13,9 +13,7 @@ public class Chain {
 		return this.listOfHotels;
 	}
 
-
 	public void deleteHotel() {
-		// TODO - implement Chain.deleteHotel
 		throw new UnsupportedOperationException();
 	}
 

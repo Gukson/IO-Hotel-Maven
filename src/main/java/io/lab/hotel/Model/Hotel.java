@@ -1,4 +1,7 @@
-package Model;
+package io.lab.hotel.Model;
+
+import io.lab.hotel.Model.Employee;
+import io.lab.hotel.Model.HotelConfigurationStrategy;
 
 import java.util.ArrayList;
 
@@ -6,7 +9,7 @@ public class Hotel {
 
 	private String name;
 	private String directorPESEL;
-	private Employee[] employeesList;
+	private ArrayList<Employee> employeesList;
 	private String status = "pending";
 	private String hotelConfiguration;
 	private HotelConfigurationStrategy configurationStrategy;
@@ -19,23 +22,14 @@ public class Hotel {
 		this.employeesList = new ArrayList<Employee>();
 	}
 
-	/**
-	 * 
-	 * @param name
-	 */
 	public boolean setName(String name) {
 		return true;
 	}
 
 	public int getDirectorID() {
-		// TODO - implement Hotel.getDirectorID
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param directorID
-	 */
 	public boolean setDirectorID(int directorID) {
 		return true;
 	}
@@ -48,10 +42,6 @@ public class Hotel {
 		return this.status;
 	}
 
-	/**
-	 * 
-	 * @param status
-	 */
 	public boolean setStatus(String status) {
 		return true;
 	}
@@ -60,18 +50,10 @@ public class Hotel {
 		return this.hotelConfiguration;
 	}
 
-	/**
-	 * 
-	 * @param hotelConfiguration
-	 */
 	public boolean setHotelConfiguration(String hotelConfiguration) {
 		return true;
 	}
 
-	/**
-	 * 
-	 * @param configurationStrategy
-	 */
 	public void setConfigurationStrategy(HotelConfigurationStrategy configurationStrategy) {
 		this.configurationStrategy = configurationStrategy;
 	}
