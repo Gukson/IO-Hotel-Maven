@@ -10,7 +10,7 @@ public interface iPresenter {
 
 	boolean acceptHotel(int hotelID);
 
-	boolean changeStatus(float reservationID);
+	boolean changeStatus(int reservationID);
 
 	/**
 	 * 

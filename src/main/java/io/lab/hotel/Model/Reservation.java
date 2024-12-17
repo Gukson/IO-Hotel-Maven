@@ -25,6 +25,7 @@ public class Reservation {
 
 
 	public boolean setStatus(String status) {
+		this.status = status;
 		return true;
 	}
 
@@ -80,8 +81,14 @@ public class Reservation {
 		return true;
 	}
 
-	public Reservation(String clientPESEL, int basicCost, String bookingDetails, String startDate, String endDate) {
-		throw new UnsupportedOperationException();
+	public Reservation(String clientPESEL, int basicCost, String bookingDetails, String startDate, String endDate, int reservationID) {
+		this.bookingDetails = bookingDetails;
+		this.clientPESEL = clientPESEL;
+		this.basicCost = basicCost;
+		this.bookingDetails = bookingDetails;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.reservationID = reservationID;
 	}
 
 }

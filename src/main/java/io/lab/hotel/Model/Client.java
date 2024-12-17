@@ -7,16 +7,17 @@ public class Client extends User {
 	private String name;
 	private String surname;
 	private String PESEL;
-	private ArrayList<Reservation> reservationList;
+	private ArrayList<Integer> reservationList;
 	private String email;
 	private String phoneNumber;
 	private String role = "client";
 
-	public ArrayList<Reservation> getReservationList() {
-		throw new UnsupportedOperationException();
+	public ArrayList<Integer> getReservationList() {
+		return reservationList;
 	}
 
-	public boolean setReservationList(int reservationList) {
+	public boolean addReservation(int reservationID) {
+		reservationList.add(reservationID);
 		return true;
 	}
 
@@ -45,7 +46,7 @@ public class Client extends User {
 	}
 
 	public String getPESEL() {
-		throw new UnsupportedOperationException();
+		return this.PESEL;
 	}
 
 	public boolean setPESEL(String PESEL) {
@@ -65,7 +66,12 @@ public class Client extends User {
 	}
 
 	public Client(String name, String surname, String PESEL, String email, String phoneNumber) {
-		throw new UnsupportedOperationException();
+		this.name = name;
+		this.surname = surname;
+		this.PESEL = PESEL;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.reservationList = new ArrayList<Integer>();
 	}
 
 }

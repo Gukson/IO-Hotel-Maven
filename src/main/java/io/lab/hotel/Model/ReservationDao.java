@@ -3,10 +3,6 @@ package io.lab.hotel.Model;
 import io.lab.hotel.Presenter.iReservationDao;
 public class ReservationDao implements iReservationDao {
 
-	/**
-	 * 
-	 * @param reservationID
-	 */
 	public boolean changeStatus(int reservationID) {
 		return true;
 	}

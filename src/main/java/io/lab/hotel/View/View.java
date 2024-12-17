@@ -3,12 +3,16 @@ package io.lab.hotel.View;
 import io.lab.hotel.Model.Client;
 import io.lab.hotel.Model.Reservation;
 import io.lab.hotel.Model.User;
+import io.lab.hotel.Presenter.Fasada;
 import io.lab.hotel.iPresenter;
 import io.lab.hotel.Model.Hotel;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class View implements iPresenter {
+
+	public Fasada fasada;
 
 	public void Show() {
 		throw new UnsupportedOperationException();
@@ -20,7 +24,15 @@ public class View implements iPresenter {
 	}
 
 	@Override
-	public boolean changeStatus(float reservationID) {
+	public boolean changeStatus(int reservationID) {
+		String status = fasada.getStatus(reservationID);
+		if (Objects.equals(status, "pending")) {
+			fasada.changeStatus(reservationID, "checked");
+			return true;
+		} else if (Objects.equals(status, "checked")) {
+			fasada.changeStatus(reservationID, "paid");
+			return true;
+		}
 		return false;
 	}
 
@@ -51,7 +63,7 @@ public class View implements iPresenter {
 
 	@Override
 	public Reservation getReservationDetails(int reservationID) {
-		return null;
+		return fasada.getReservationDetails(reservationID);
 	}
 
 	@Override
@@ -70,8 +82,8 @@ public class View implements iPresenter {
 	}
 
 	@Override
-	public User getUser(String PESEL) {
-		return null;
+	public Client getUser(String PESEL) {
+		return fasada.getUser(PESEL);
 	}
 
 	@Override
