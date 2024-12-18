@@ -53,6 +53,7 @@ public class Reservation {
 
 
 	public boolean setReservationID(int reservationID) {
+		this.reservationID = reservationID;
 		return true;
 	}
 

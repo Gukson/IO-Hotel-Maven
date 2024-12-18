@@ -34,7 +34,7 @@ public interface iFasada {
 	boolean hireEmployee(String name, String surname, String PESEL, String email);
 
 
-	boolean login(String email, String password);
+	User login(String email, String password);
 
 
 	boolean register(String name, String surname, String PESEL, String email, String phoneNumber);

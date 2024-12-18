@@ -68,6 +68,10 @@ public class View implements iPresenter {
 
 	@Override
 	public User login(String email, String password) {
+//		User u = fasada.login(email, password);
+//		if (u == null) {
+//
+//		}
 		return null;
 	}
 

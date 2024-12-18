@@ -2,6 +2,7 @@ package io.lab.hotel.Presenter;
 import io.lab.hotel.Model.Client;
 import io.lab.hotel.Model.Employee;
 import io.lab.hotel.Model.Reservation;
+import io.lab.hotel.Model.User;
 import io.lab.hotel.iFasada;
 
 import java.util.ArrayList;
@@ -76,8 +77,8 @@ public class Fasada implements iFasada {
 		return true;
 	}
 
-	public boolean login(String email, String password) {
-		return true;
+	public User login(String email, String password) {
+		return null;
 	}
 
 	public boolean register(String name, String surname, String PESEL, String email, String phoneNumber) {
