@@ -7,6 +7,6 @@ import io.lab.hotel.View.View;
 public class Main {
     public static void main(String[] args) {
         CustomerService customerService = new CustomerService();
-        System.out.println(customerService.changeStatus(););
+        System.out.println(customerService.changeStatus());
     }
 }
