@@ -1,7 +1,5 @@
 package io.lab.hotel.Model;
 
-import io.lab.hotel.Presenter.*;
-
 public class FactoryDao implements iFactoryDao {
 
 	public iChainDao CreateChainDao() {

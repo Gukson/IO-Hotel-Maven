@@ -1,4 +1,4 @@
-package io.lab.hotel.View;
+package io.lab.hotel.Presenter;
 
 import io.lab.hotel.Model.Client;
 import io.lab.hotel.Model.Reservation;
@@ -9,9 +9,8 @@ import io.lab.hotel.iFasada;
 import io.lab.hotel.Model.Hotel;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
-public class View implements iPresenter {
+public class Presenter implements iPresenter {
 
 	public void Show() {
 		throw new UnsupportedOperationException();
@@ -32,12 +31,9 @@ public class View implements iPresenter {
 
 	@Override
 	public boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate) {
-//		if (this.user == null) {
-//			LoginScreen loginScreen = new LoginScreen();
-//			this.user = loginScreen.login();
-//		}
-
-		return false;
+		iFasada fasada = new Fasada();
+		boolean results = fasada.createReservation(clientPESEL,basicCost,bookingDetails,startDate,endDate);
+		return results;
 	}
 
 	@Override

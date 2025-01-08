@@ -1,6 +1,4 @@
-package io.lab.hotel.Presenter;
-
-import io.lab.hotel.Model.Employee;
+package io.lab.hotel.Model;
 
 import java.util.ArrayList;
 

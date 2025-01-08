@@ -1,15 +1,16 @@
 package io.lab.hotel.View;
 
 import io.lab.hotel.Model.Fasada;
+import io.lab.hotel.Presenter.Presenter;
 
 import java.util.ArrayList;
 
 public class App {
 	public Fasada fasada;
 	public App() {
-		this.views = new  ArrayList<View>();
+		this.presenters = new  ArrayList<Presenter>();
 	}
 
-	public ArrayList<View> views;
+	public ArrayList<Presenter> presenters;
 
 }

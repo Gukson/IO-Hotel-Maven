@@ -1,7 +1,5 @@
 package io.lab.hotel.Model;
 
-import io.lab.hotel.Presenter.iReservationDao;
-
 import java.util.Objects;
 
 public class ReservationDao implements iReservationDao {
@@ -18,7 +16,13 @@ public class ReservationDao implements iReservationDao {
 		return statusChanged;
 	}
 
-	public boolean createReservation(String clientPESEL, int basicCost, String bookingDetails, String startDate, String endDate) {
+	public boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate) {
+		Reservation reservation = new Reservation();
+		reservation.setClientPESEL(clientPESEL);
+		reservation.setBasicCost(basicCost);
+		reservation.setBookingDetails(bookingDetails);
+		reservation.setStartDate(startDate);
+		reservation.setEndDate(endDate);
 		return true;
 	}
 

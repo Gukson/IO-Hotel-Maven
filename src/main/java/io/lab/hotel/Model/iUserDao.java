@@ -1,6 +1,4 @@
-package io.lab.hotel.Presenter;
-
-import io.lab.hotel.Model.User;
+package io.lab.hotel.Model;
 
 public interface iUserDao {
 

@@ -1,11 +1,10 @@
-package io.lab.hotel.Presenter;
+package io.lab.hotel.Model;
 
-import io.lab.hotel.Model.Reservation;
 public interface iReservationDao {
 
 	boolean changeStatus(int reservationID);
 
-	boolean createReservation(String clientPESEL, int basicCost, String bookingDetails, String startDate, String endDate);
+	boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate);
 
 	boolean editReservation(int reservationID);
 

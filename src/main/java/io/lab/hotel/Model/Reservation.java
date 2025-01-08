@@ -62,7 +62,7 @@ public class Reservation {
 	}
 
 
-	public boolean setClientPESEL(int clientID) {
+	public boolean setClientPESEL(String clientID) {
 		return true;
 	}
 

@@ -1,8 +1,6 @@
 package io.lab.hotel.Model;
 
 
-import io.lab.hotel.Presenter.iChainDao;
-
 import java.util.ArrayList;
 
 public class ChainDao implements iChainDao {

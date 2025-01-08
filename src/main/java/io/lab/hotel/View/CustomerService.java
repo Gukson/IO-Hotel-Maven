@@ -1,11 +1,7 @@
 package io.lab.hotel.View;
 
-import io.lab.hotel.Model.Client;
-import io.lab.hotel.Model.Reservation;
+import io.lab.hotel.Presenter.Presenter;
 import io.lab.hotel.iPresenter;
-
-import java.util.ArrayList;
-import java.util.Scanner;
 
 public class CustomerService {
 
@@ -15,7 +11,7 @@ public class CustomerService {
 
 	public boolean changeStatus() {
 
-		iPresenter presenter = new View();
+		iPresenter presenter = new Presenter();
 		boolean results = presenter.changeStatus(1);
 		return results;
 	}

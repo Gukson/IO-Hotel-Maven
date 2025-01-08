@@ -1,10 +1,7 @@
 package io.lab.hotel.Model;
 import io.lab.hotel.iFasada;
-import io.lab.hotel.Presenter.iFactoryDao;
-import io.lab.hotel.Presenter.iReservationDao;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Fasada implements iFasada {
 
@@ -22,7 +19,11 @@ public class Fasada implements iFasada {
 	}
 
 
-	public boolean createReservation(String clientPESEL, int basicCost, String bookingDetails, String startDate, String endDate) {
+	public boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate) {
+		iFactoryDao factoryDao = new FactoryDao();
+		iReservationDao reservationDao = factoryDao.CreateReservationDao();
+
+		boolean response = reservationDao.createReservation(clientPESEL,basicCost,bookingDetails,startDate,endDate);
 		return true;
 	}
 

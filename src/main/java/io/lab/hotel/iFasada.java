@@ -15,7 +15,7 @@ public interface iFasada {
 	 */
 	boolean changeStatus(int reservationID);
 
-	boolean createReservation(String clientPESEL, int basicCost, String bookingDetails, String startDate, String endDate);
+	boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate);
 
 
 	boolean editHotel(int hotelID);

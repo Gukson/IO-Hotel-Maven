@@ -1,4 +1,4 @@
-package io.lab.hotel.Presenter;
+package io.lab.hotel.Model;
 
 import java.util.ArrayList;
 
