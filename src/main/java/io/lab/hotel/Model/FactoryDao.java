@@ -1,22 +1,23 @@
 package io.lab.hotel.Model;
 
-import io.lab.hotel.Presenter.iFactoryDao;
+import io.lab.hotel.Presenter.*;
 
 public class FactoryDao implements iFactoryDao {
 
-	public ChainDao CreateChainDao() {
+	public iChainDao CreateChainDao() {
 		throw new UnsupportedOperationException();
 	}
 
-	public HotelDao CreateHotelDao() {
+	public iHotelDao CreateHotelDao() {
 		throw new UnsupportedOperationException();
 	}
 
-	public ReservationDao CreateReservationDao() {
-		throw new UnsupportedOperationException();
+	public iReservationDao CreateReservationDao() {
+		iReservationDao iReservationDao = new ReservationDao();
+		return iReservationDao;
 	}
 
-	public UserDao CreateUserDao() {
+	public iUserDao CreateUserDao() {
 		throw new UnsupportedOperationException();
 	}
 

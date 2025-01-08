@@ -1,6 +1,6 @@
 package io.lab.hotel.View;
 
-import io.lab.hotel.Presenter.Fasada;
+import io.lab.hotel.Model.Fasada;
 
 import java.util.ArrayList;
 

@@ -7,12 +7,12 @@ import io.lab.hotel.Model.UserDao;
 
 public interface iFactoryDao {
 
-	UserDao CreateUserDao();
+	iUserDao CreateUserDao();
 
-	ReservationDao CreateReservationDao();
+	iReservationDao CreateReservationDao();
 
-	HotelDao CreateHotelDao();
+	iHotelDao CreateHotelDao();
 
-	ChainDao CreateChainDao();
+	iChainDao CreateChainDao();
 
 }
