@@ -40,8 +40,10 @@ public class Fasada implements iFasada {
 	}
 
 
-	public float getBill(float reservationID) {
-		throw new UnsupportedOperationException();
+	public float getBill(int reservationID) {
+		iFactoryDao factoryDao = new FactoryDao();
+		iReservationDao reservationDao = factoryDao.CreateReservationDao();
+        return reservationDao.generateBill(reservationID);
 	}
 
 	public ArrayList<Employee> getEmployeesList(int hotelID) {

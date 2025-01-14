@@ -22,7 +22,7 @@ public interface iFasada {
 
 	boolean fireEmployee(String PESEL);
 
-	float getBill(float reservationID);
+	float getBill(int reservationID);
 
 
 	ArrayList<Employee> getEmployeesList(int hotelID);

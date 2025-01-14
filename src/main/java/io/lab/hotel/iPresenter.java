@@ -18,7 +18,7 @@ public interface iPresenter  {
 
 	boolean editHotel(int hotelIDr);
 
-	boolean generateBill(float reservationID);
+	float generateBill(int reservationID);
 
 	ArrayList<Client> getClientList(int hotelID);
 

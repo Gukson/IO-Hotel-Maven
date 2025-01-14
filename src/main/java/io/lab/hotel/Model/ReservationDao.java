@@ -1,6 +1,7 @@
 package io.lab.hotel.Model;
 
 import java.util.Objects;
+import io.lab.hotel.Data.Data;
 
 public class ReservationDao implements iReservationDao {
 
@@ -31,13 +32,16 @@ public class ReservationDao implements iReservationDao {
 	}
 
 	public float generateBill(int reservationID) {
-		return 0;
+		Reservation reservation = getReservationByID(reservationID);
+		if (reservation == null) {
+			return 0;
+		}
+		return reservation.getBasicCost() + reservation.getAddedCost();
 	}
 
 	public Reservation getReservationByID(int reservationID) {
-		Reservation res = new Reservation();
-		res.setReservationID(reservationID);
-		return res;
+		Data data = new Data();
+        return data.getReservationByID(reservationID);
 	}
 
 }

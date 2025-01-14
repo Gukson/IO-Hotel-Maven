@@ -5,8 +5,10 @@ import io.lab.hotel.iPresenter;
 
 public class CustomerService {
 
-	public float getBill(float reservationID) {
-		throw new UnsupportedOperationException();
+	public float getBill(int reservationID) {
+		iPresenter presenter = new Presenter();
+		float bill = presenter.generateBill(reservationID);
+		return bill;
 	}
 
 	public boolean changeStatus() {

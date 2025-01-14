@@ -16,6 +16,7 @@ public class Reservation {
 	}
 
 	public boolean setBookingDetails(String bookingDetails) {
+		this.bookingDetails = bookingDetails;
 		return true;
 	}
 
@@ -35,6 +36,7 @@ public class Reservation {
 
 
 	public boolean setBasicCost(float basicCost) {
+		this.basicCost = basicCost;
 		return true;
 	}
 
@@ -44,6 +46,7 @@ public class Reservation {
 
 
 	public boolean setAddedCost(float addedCost) {
+		this.addedCost = addedCost;
 		return true;
 	}
 
@@ -63,6 +66,7 @@ public class Reservation {
 
 
 	public boolean setClientPESEL(String clientID) {
+		this.clientPESEL = clientID;
 		return true;
 	}
 
@@ -71,6 +75,7 @@ public class Reservation {
 	}
 
 	public boolean setStartDate(String startDate) {
+		this.startDate = startDate;
 		return true;
 	}
 
@@ -79,6 +84,7 @@ public class Reservation {
 	}
 
 	public boolean setEndDate(String endDate) {
+		this.endDate = endDate;
 		return true;
 	}
 

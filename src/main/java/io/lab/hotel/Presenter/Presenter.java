@@ -47,8 +47,10 @@ public class Presenter implements iPresenter {
 	}
 
 	@Override
-	public boolean generateBill(float reservationID) {
-		return false;
+	public float generateBill(int reservationID) {
+		iFasada fasada = new Fasada();
+		float bill = fasada.getBill(reservationID);
+		return bill;
 	}
 
 	@Override
