@@ -31,10 +31,11 @@ public class ReservationDao implements iReservationDao {
 		return true;
 	}
 
-	public float generateBill(int reservationID) {
+	public float generateBill(int reservationID) throws Exception {
 		Reservation reservation = getReservationByID(reservationID);
 		if (reservation == null) {
-			return 0;
+			throw new IllegalArgumentException("Reservation not found");
+
 		}
 		return reservation.getBasicCost() + reservation.getAddedCost();
 	}

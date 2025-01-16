@@ -8,7 +8,7 @@ public interface iReservationDao {
 
 	boolean editReservation(int reservationID);
 
-	float generateBill(int reservationID);
+	float generateBill(int reservationID) throws Exception;
 
 	Reservation getReservationByID(int reservationID);
 

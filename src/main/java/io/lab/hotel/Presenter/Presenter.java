@@ -24,16 +24,14 @@ public class Presenter implements iPresenter {
 	@Override
 	public boolean changeStatus(int reservationID) {
 		iFasada fasada = new Fasada();
-		boolean results = fasada.changeStatus(reservationID);
 
-		return results;
+        return fasada.changeStatus(reservationID);
 	}
 
 	@Override
 	public boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate) {
 		iFasada fasada = new Fasada();
-		boolean results = fasada.createReservation(clientPESEL,basicCost,bookingDetails,startDate,endDate);
-		return results;
+        return fasada.createReservation(clientPESEL,basicCost,bookingDetails,startDate,endDate);
 	}
 
 	@Override
@@ -47,10 +45,9 @@ public class Presenter implements iPresenter {
 	}
 
 	@Override
-	public float generateBill(int reservationID) {
+	public float generateBill(int reservationID) throws Exception {
 		iFasada fasada = new Fasada();
-		float bill = fasada.getBill(reservationID);
-		return bill;
+        return fasada.getBill(reservationID);
 	}
 
 	@Override
@@ -79,8 +76,9 @@ public class Presenter implements iPresenter {
 	}
 
 	@Override
-	public Client getUser(String PESEL) {
-		return null;
+	public User getUser(String PESEL) {
+		iFasada fasada = new Fasada();
+        return fasada.getUser(PESEL);
 	}
 
 	@Override

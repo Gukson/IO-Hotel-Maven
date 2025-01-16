@@ -11,12 +11,11 @@ public class FactoryDao implements iFactoryDao {
 	}
 
 	public iReservationDao CreateReservationDao() {
-		iReservationDao iReservationDao = new ReservationDao();
-		return iReservationDao;
+        return new ReservationDao();
 	}
 
 	public iUserDao CreateUserDao() {
-		throw new UnsupportedOperationException();
+        return new UserDao();
 	}
 
 }

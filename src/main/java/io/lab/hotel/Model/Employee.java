@@ -1,18 +1,25 @@
 package io.lab.hotel.Model;
 
 public class Employee extends User {
-
 	private String name;
 	private String surname;
 	private String PESEL;
-	private String role;
+	private String role = "employee";
 	private String email;
+
+	public Employee(String name, String surname, String PESEL, String email) {
+		this.name = name;
+		this.surname = surname;
+		this.PESEL = PESEL;
+		this.email = email;
+	}
 
 	public String getName() {
 		return this.name;
 	}
 
-	public boolean setName(String Name) {
+	public boolean setName(String name) {
+		this.name = name;
 		return true;
 	}
 
@@ -20,15 +27,17 @@ public class Employee extends User {
 		return this.surname;
 	}
 
-	public boolean setSurname(String Surname) {
+	public boolean setSurname(String surname) {
+		this.surname = surname;
 		return true;
 	}
 
 	public String getPESEL() {
-		throw new UnsupportedOperationException();
+		return this.PESEL;
 	}
 
 	public boolean setPESEL(String PESEL) {
+		this.PESEL = PESEL;
 		return true;
 	}
 
@@ -37,11 +46,8 @@ public class Employee extends User {
 	}
 
 	public boolean setRole(String role) {
+		this.role = role;
 		return true;
-	}
-
-	public Employee(String name, String surname, String PESEL) {
-		throw new UnsupportedOperationException();
 	}
 
 	public String getEmail() {
@@ -49,7 +55,7 @@ public class Employee extends User {
 	}
 
 	public boolean setEmail(String email) {
+		this.email = email;
 		return true;
 	}
-
 }

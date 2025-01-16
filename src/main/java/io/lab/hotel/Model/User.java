@@ -14,4 +14,9 @@ public abstract class User {
 		return true;
 	}
 
+    public String getPESEL() {
+        return null;
+    }
+
+	public String getRole() {return null;}
 }

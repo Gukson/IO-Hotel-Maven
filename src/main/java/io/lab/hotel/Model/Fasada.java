@@ -40,7 +40,7 @@ public class Fasada implements iFasada {
 	}
 
 
-	public float getBill(int reservationID) {
+	public float getBill(int reservationID) throws Exception {
 		iFactoryDao factoryDao = new FactoryDao();
 		iReservationDao reservationDao = factoryDao.CreateReservationDao();
         return reservationDao.generateBill(reservationID);
@@ -80,13 +80,10 @@ public class Fasada implements iFasada {
 		return true;
 	}
 
-	public Client getUser(String PESEL) {
-//		for(Client client : clients) {
-//			if(client.getPESEL().equals(PESEL)) {
-//				return client;
-//			}
-//		}
-		return null;
+	public User getUser(String PESEL) {
+		iFactoryDao factoryDao = new FactoryDao();
+		iUserDao userDao = factoryDao.CreateUserDao();
+		return userDao.getUser(PESEL);
 	}
 
 	public String getStatus(int reservationID) {
