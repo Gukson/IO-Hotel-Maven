@@ -5,6 +5,14 @@ import io.lab.hotel.Data.Data;
 
 public class ReservationDao implements iReservationDao {
 
+	private ReservationService reservationService;
+
+	public ReservationDao(ReservationService reservationService) {
+		this.reservationService = reservationService;
+	}
+
+	public ReservationDao() {}
+
 	public boolean changeStatus(int reservationID) {
 		Reservation reservation = getReservationByID(reservationID);
 

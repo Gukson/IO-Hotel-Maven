@@ -24,7 +24,6 @@ public class Presenter implements iPresenter {
 	@Override
 	public boolean changeStatus(int reservationID) {
 		iFasada fasada = new Fasada();
-
         return fasada.changeStatus(reservationID);
 	}
 

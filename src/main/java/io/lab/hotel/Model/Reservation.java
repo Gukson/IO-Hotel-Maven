@@ -7,7 +7,7 @@ public class Reservation {
 	private float basicCost;
 	private float addedCost = 0;
 	private int reservationID;
-	private String clientPESEL;
+	private String clientPESEL = "";
 	private String startDate;
 	private String endDate;
 
@@ -65,8 +65,11 @@ public class Reservation {
 	}
 
 
-	public boolean setClientPESEL(String clientID) {
-		this.clientPESEL = clientID;
+	public boolean setClientPESEL(String pesel) {
+		if (pesel.length() != 11) {
+			throw new IllegalArgumentException("Client PESEL length must be 11");
+		}
+		this.clientPESEL = pesel;
 		return true;
 	}
 

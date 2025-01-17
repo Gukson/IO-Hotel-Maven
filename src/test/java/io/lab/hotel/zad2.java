@@ -1,5 +1,6 @@
 package io.lab.hotel;
 
+import io.lab.hotel.Model.Reservation;
 import io.lab.hotel.View.CustomerService;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -16,37 +17,36 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class zad2 {
 
-    private CustomerService customerService;
+    private Reservation reservation;
 
     // Inicjalizacja przed każdym testem
     @BeforeEach
     void setUp() {
-        customerService = new CustomerService();
+        reservation = new Reservation();
     }
 
     // Test jednostkowy dla metody getBill z przykładowym wejściem
     @Test
-    void testGetBillForKnownCustomer() throws Exception {
-        double bill = customerService.getBill(1);
-        assertEquals(600.0, bill, "Bill should match expected value for customer ID 1");
+    void testDefaultStatus() throws Exception {
+        assertEquals("pending", reservation.getStatus());
     }
 
     // Test parametryzowany z wykorzystaniem CsvSource
     @ParameterizedTest
     @CsvSource({
-            "1, 600.0",
-            "2, 950.0"
+            "100.0, 50.0, 150.0",
+            "200.0, 0.0, 200.0"
     })
-    void testGetBillParameterized(int customerId, double expectedBill) throws Exception {
-        double bill = customerService.getBill(customerId);
-        assertEquals(expectedBill, bill, "Bill should match expected value");
+    void testCostCalculation(float basicCost, float addedCost, float expectedTotal) throws Exception{
+        reservation.setBasicCost(basicCost);
+        reservation.setAddedCost(addedCost);
+        assertEquals(expectedTotal, reservation.getBasicCost() + reservation.getAddedCost());
     }
 
-    // Obsługa wyjątków z adnotacją ExtendWith
     @ExtendWith(ExceptionHandler.class)
     @Test
     void testGetBillWithException() {
-        Executable executable = () -> customerService.getBill(1); // Poprawny Executable
+        Executable executable = () -> reservation.setClientPESEL("12345678910"); // Poprawny Executable
         assertDoesNotThrow(executable, "Method should not throw an exception for valid input");
     }
 

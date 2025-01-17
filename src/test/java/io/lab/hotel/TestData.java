@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TestData {
-    public static Map<Integer, Double> getCustomerBills() {
-        Map<Integer, Double> customerBills = new HashMap<>();
-        customerBills.put(1, 600.0);
-        customerBills.put(2, 950.0);
+    public static Map<Integer, Float> getCustomerBills() {
+        Map<Integer, Float> customerBills = new HashMap<>();
+        customerBills.put(1, 600.00F);
+        customerBills.put(2, 950.0F);
         return customerBills;
     }
 
