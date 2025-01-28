@@ -5,6 +5,6 @@ Suite
 
 !note This page is automatically generated when running tests. It will be overwritten by the next Suite or Test execution.
 
-Tests failed (first failure was at 2025-01-28T19:18:12.581381):
+Tests failed (first failure was at 2025-01-28T19:42:05.303547):
 
 !see [[FitNesse.Rachunki.ObliczanieRachunku][.FitNesse.Rachunki.ObliczanieRachunku]]

@@ -8,6 +8,7 @@ public class SetUp extends Fixture {
     public static iFasada fasada;
 
     public SetUp() {
+        // Inicjalizacja fasady
         fasada = new Fasada();
     }
 }

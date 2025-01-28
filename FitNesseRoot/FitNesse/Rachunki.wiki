@@ -1,2 +1,2 @@
 !contents -R2 -g -p -f -h
-!path /Users/kuba/Documents/MojeDokumenty/studia/V semestr/IO/IO-Hotel-Maven/target/classes
+!path /Users/kuba/Documents/MojeDokumenty/studia/V semestr/IO/IO-Hotel-Maven/target/test-classes

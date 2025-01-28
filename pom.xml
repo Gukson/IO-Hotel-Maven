@@ -32,6 +32,12 @@
             <version>1.49</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.fitnesse</groupId>
+            <artifactId>fitnesse</artifactId>
+            <version>20241026</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
