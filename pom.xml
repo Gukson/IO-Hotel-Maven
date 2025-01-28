@@ -36,7 +36,7 @@
             <groupId>org.fitnesse</groupId>
             <artifactId>fitnesse</artifactId>
             <version>20241026</version>
-            <scope>test</scope>
+            <scope>main</scope>
         </dependency>
     </dependencies>
 

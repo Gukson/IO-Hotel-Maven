@@ -1,2 +1,2 @@
 !contents -R2 -g -p -f -h
-!|fitnesse.fixtures.ObliczanieRachunkuTest|
+!|fitnesse.fixtures.SetUp|

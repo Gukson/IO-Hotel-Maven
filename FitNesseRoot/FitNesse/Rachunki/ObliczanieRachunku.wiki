@@ -2,7 +2,7 @@
 Test
 ---
 !|fitnesse.fixtures.ObliczanieRachunkuTest|
-| reservationID | expectedBill | verifyBill |
+| reservationID | expectedBill | verifyBill?|
 | 1             | 600.00       | true        |
 | 2             | 950.00       | true        |
 | 999           | 0.00         | false       |
