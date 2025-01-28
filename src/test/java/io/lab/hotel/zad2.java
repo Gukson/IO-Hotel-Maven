@@ -1,15 +1,14 @@
 package io.lab.hotel;
 
 import io.lab.hotel.Model.Reservation;
-import io.lab.hotel.View.CustomerService;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.extension.ExtensionContext;
-import org.junit.jupiter.api.function.Executable; // Właściwy interfejs JUnit 5
+import org.junit.jupiter.api.function.Executable;
 import org.junit.jupiter.api.extension.TestExecutionExceptionHandler;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.MethodSource;
+
 
 import java.util.stream.Stream;
 
@@ -46,7 +45,7 @@ public class zad2 {
     @ExtendWith(ExceptionHandler.class)
     @Test
     void testGetBillWithException() {
-        Executable executable = () -> reservation.setClientPESEL("12345678910"); // Poprawny Executable
+        Executable executable = () -> reservation.setClientPESEL("12345678910");
         assertDoesNotThrow(executable, "Method should not throw an exception for valid input");
     }
 

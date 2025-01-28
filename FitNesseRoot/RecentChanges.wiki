@@ -1,0 +1,8 @@
+|FitNesse.Rachunki.ObliczanieRachunku||19:18:30 wt., sty 28, 2025|
+|FitNesse.Rachunki.SetUp||19:15:30 wt., sty 28, 2025|
+|FitNesse.Rachunki.Setup||19:10:59 wt., sty 28, 2025|
+|FitNesse.Rachunki||19:09:30 wt., sty 28, 2025|
+|FrontPage||19:09:07 wt., sty 28, 2025|
+|FrontPage.TestRachunki||19:06:05 wt., sty 28, 2025|
+|FrontPage.Rachunki||19:04:56 wt., sty 28, 2025|
+|FrontPage.ObliczanieRachunkuTest||18:53:17 wt., sty 28, 2025|

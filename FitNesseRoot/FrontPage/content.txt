@@ -1,0 +1,2 @@
+!1 Welcome to [[Rachunki][FitNesse.Rachunki]]!
+!3 ''The fully integrated stand-alone acceptance testing framework and wiki.''
