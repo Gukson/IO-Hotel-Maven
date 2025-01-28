@@ -1,0 +1,9 @@
+---
+Test
+---
+!|fitnesse.fixtures.ZmianaStatusuRezerwacjiTest |
+| reservationID | changeStatus? |
+| 1           | true          |
+| 2           | true        |
+| 999           | false         |
+| 103           |  false       |

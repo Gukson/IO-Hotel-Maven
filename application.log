@@ -1,0 +1,12 @@
+sty 28, 2025 9:24:03 PM fitnesse.fixtures.ZmianaStatusuRezerwacjiTest changeStatus
+INFO: Stary status: confirmed
+sty 28, 2025 9:24:03 PM fitnesse.fixtures.ZmianaStatusuRezerwacjiTest changeStatus
+INFO: Nowy status: true
+sty 28, 2025 9:24:03 PM fitnesse.fixtures.ZmianaStatusuRezerwacjiTest changeStatus
+INFO: Stary status: pending
+sty 28, 2025 9:24:03 PM fitnesse.fixtures.ZmianaStatusuRezerwacjiTest changeStatus
+INFO: Nowy status: true
+sty 28, 2025 9:24:03 PM fitnesse.fixtures.ZmianaStatusuRezerwacjiTest changeStatus
+SEVERE: Błąd: Cannot invoke "io.lab.hotel.Model.Reservation.getStatus()" because "r" is null
+sty 28, 2025 9:24:03 PM fitnesse.fixtures.ZmianaStatusuRezerwacjiTest changeStatus
+SEVERE: Błąd: Cannot invoke "io.lab.hotel.Model.Reservation.getStatus()" because "r" is null

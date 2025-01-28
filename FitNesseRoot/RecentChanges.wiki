@@ -1,6 +1,9 @@
-|FitNesse.Rachunki.ObliczanieRachunku||19:54:46 wt., sty 28, 2025|
-|FitNesse.Rachunki||19:53:31 wt., sty 28, 2025|
-|FitNesse.Rachunki.SetUp||19:48:09 wt., sty 28, 2025|
+|FitNesse.Rachunki.ZmianaStatusu||21:23:11 wt., sty 28, 2025|
+|FitNesse.Rachunki.SprawdzanieStatusu||20:21:21 wt., sty 28, 2025|
+|FitNesse.Rachunki||20:09:46 wt., sty 28, 2025|
+|FitNesse.Rachunki.changeReservationStatus||20:09:24 wt., sty 28, 2025|
+|FitNesse.Rachunki.ObliczanieRachunku||20:08:54 wt., sty 28, 2025|
+|FitNesse.Rachunki.SetUp||20:08:46 wt., sty 28, 2025|
 |FitNesse.Rachunki.Setup||19:10:59 wt., sty 28, 2025|
 |FrontPage||19:09:07 wt., sty 28, 2025|
 |FrontPage.TestRachunki||19:06:05 wt., sty 28, 2025|

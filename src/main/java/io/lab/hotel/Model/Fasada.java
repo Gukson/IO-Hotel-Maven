@@ -87,12 +87,11 @@ public class Fasada implements iFasada {
 	}
 
 	public String getStatus(int reservationID) {
-//		for (Reservation reservation : reservations) {
-//			if (reservation.getReservationID() == reservationID) {
-//				return reservation.getStatus();
-//			}
-//		}
-		return null;
+		iFactoryDao factoryDao = new FactoryDao();
+		iReservationDao reservationDao = factoryDao.CreateReservationDao();
+
+		Reservation r = reservationDao.getReservationByID(reservationID);
+		return r.getStatus();
 	}
 
 }

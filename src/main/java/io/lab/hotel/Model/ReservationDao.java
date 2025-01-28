@@ -21,8 +21,7 @@ public class ReservationDao implements iReservationDao {
 		} else if (Objects.equals(reservation.getStatus(), "checked")) {
 			reservation.setStatus("paid");
 		}
-		boolean statusChanged = true;
-		return statusChanged;
+        return true;
 	}
 
 	public boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate) {
