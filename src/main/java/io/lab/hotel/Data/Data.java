@@ -32,8 +32,9 @@ public class Data {
                     res.setClientPESEL(parts[2]);
                     res.setStartDate(parts[3]);
                     res.setEndDate(parts[4]);
-                    res.setBasicCost(Float.parseFloat(parts[5]));
-                    res.setAddedCost(Float.parseFloat(parts[6]));
+                    res.setBasicCost(Float.parseFloat(parts[5].replace(",", ".")));
+                    res.setAddedCost(Float.parseFloat(parts[6].replace(",", ".")));
+                    System.out.println(res.getBasicCost());
                     res.setStatus(parts[7]);
                     res.setBookingDetails(parts[8]);
                     reservations.add(res);
@@ -102,6 +103,10 @@ public class Data {
     public List<User> getAllUsers() {
         saveDataToFile();
         return this.users;
+    }
+
+    public Integer getListLenght(){
+        return this.reservations.size();
     }
 
     public void createReservation(Reservation reservation) {

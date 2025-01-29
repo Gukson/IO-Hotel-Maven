@@ -1,0 +1,9 @@
+---
+Test
+---
+!include TestRezerwacji
+
+!| fitnesse.fixtures.TestObliczanieKosztuRezerwacji |
+| IdRezerwacji  | kosztRezerwacji? |
+| 4  | 500.00         |
+| 5  | 750.00         |

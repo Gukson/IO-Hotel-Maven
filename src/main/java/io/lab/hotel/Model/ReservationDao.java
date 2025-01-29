@@ -25,13 +25,17 @@ public class ReservationDao implements iReservationDao {
 	}
 
 	public boolean createReservation(String clientPESEL, float basicCost, String bookingDetails, String startDate, String endDate) {
+		Data reservationData = new Data();
+		Integer l = reservationData.getListLenght();
+
 		Reservation reservation = new Reservation();
+		reservation.setReservationID(l);
 		reservation.setClientPESEL(clientPESEL);
 		reservation.setBasicCost(basicCost);
 		reservation.setBookingDetails(bookingDetails);
 		reservation.setStartDate(startDate);
 		reservation.setEndDate(endDate);
-		Data reservationData = new Data();
+
 		reservationData.createReservation(reservation);
 		return true;
 	}

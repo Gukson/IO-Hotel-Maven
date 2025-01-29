@@ -1,0 +1,4 @@
+!|fitnesse.fixtures.TestTworzenieRezerwacji |
+| clientPESEL  | basicCost | bookingDetails | startDate  | endDate    | dodajRezerwacje? |
+| 12345678901  | 500.00    | Pokój Deluxe   | 10-05-2024 | 15-05-2024 | true            |
+| 98765432109  | 750.00    | Apartament VIP | 01-06-2024 | 07-06-2024 | true            |
