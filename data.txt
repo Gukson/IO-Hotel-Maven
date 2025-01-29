@@ -1,0 +1,10 @@
+RESERVATION;1;12345678901;2025-01-14;2025-01-18;500,00;100,00;pending;Room 101, 2 Guests
+RESERVATION;2;98765432109;2025-02-01;2025-02-05;800,00;150,00;pending;Room 202, 1 Guest
+RESERVATION;3;11223344556;2025-03-10;2025-03-15;1200,00;200,00;pending;Room 303, 3 Guests
+RESERVATION;0;12345678912;15-10-2203;15-10-2204;1000,00;0,00;pending;very soft bed please
+EMPLOYEE;Anna;Kowalska;12345678901;anna.kowalska@hotel.com
+EMPLOYEE;Jan;Nowak;98765432109;jan.nowak@hotel.com
+EMPLOYEE;Maria;Wiśniewska;11223344556;maria.wisniewska@hotel.com
+CLIENT;Piotr;Zieliński;11111111111;piotr.zielinski@gmail.com;123456789
+CLIENT;Katarzyna;Wójcik;22222222222;katarzyna.wojcik@gmail.com;987654321
+CLIENT;Tomasz;Lewandowski;33333333333;tomasz.lewandowski@gmail.com;555666777

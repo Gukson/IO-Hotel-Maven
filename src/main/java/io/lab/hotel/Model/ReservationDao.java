@@ -31,6 +31,8 @@ public class ReservationDao implements iReservationDao {
 		reservation.setBookingDetails(bookingDetails);
 		reservation.setStartDate(startDate);
 		reservation.setEndDate(endDate);
+		Data reservationData = new Data();
+		reservationData.createReservation(reservation);
 		return true;
 	}
 
